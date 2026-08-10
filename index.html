@@ -3,279 +3,316 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>True School Barbers | Barbershop, Invercargill</title>
-<meta name="description" content="Traditional barbershop in Invercargill. Skin fades, scissor cuts, beard trims and hot-towel shaves at 52 Victoria Avenue, Avenal. Walk in or book online.">
-<meta name="theme-color" content="#111013">
-<meta property="og:title" content="True School Barbers | Barbershop, Invercargill">
-<meta property="og:description" content="Sharp fades, classic cuts and hot-towel shaves in the heart of Invercargill. Book with Mason and the crew.">
+<title>True School Barbers | Barber, Invercargill</title>
+<meta name="description" content="Skin fades, classic cuts, beard trims, hair art and straight-razor wet shaves in Avenal, Invercargill. Book True School Barbers online or walk in.">
+<link rel="icon" href="img/logo.png" type="image/png">
+<meta property="og:title" content="True School Barbers | Barber, Invercargill">
+<meta property="og:description" content="Fades, classic cuts and straight-razor shaves in Invercargill. Book your chair at True School Barbers.">
 <meta property="og:type" content="business.business">
-<meta property="og:image" content="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1200&q=80">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23111013'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' font-weight='700' text-anchor='middle' fill='%23c9a25b'%3ETS%3C/text%3E%3C/svg%3E">
+<meta property="og:image" content="img/hero1.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#111013; --ink-2:#1a181d; --ink-3:#232025;
-  --bone:#f6f2ea; --bone-2:#efe9dd; --paper:#ffffff;
-  --gold:#c9a25b; --gold-2:#dcbb78; --gold-deep:#a9823d;
-  --text:#211f22; --muted:#6d6a6f; --line:#e4ddce;
-  --white:#f4f1ec;
-  --shadow:0 24px 60px -28px rgba(17,16,19,.5);
-  --radius:16px; --radius-sm:12px;
-  --wrap:1180px;
+  --ink:#0e0d0c; --ink-2:#161412; --bone:#f5f2ec; --bone-2:#ece6db;
+  --brass:#c3a054; --brass-soft:#dcbe86; --muted:#6f6a61; --line:rgba(195,160,84,.28);
+  --white:#fbf9f5;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:"Mulish",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:var(--bone);line-height:1.65;font-size:17px;overflow-x:hidden}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',system-ui,sans-serif;color:var(--ink);background:var(--bone);line-height:1.65;font-size:17px;overflow-x:hidden}
 img{max-width:100%;display:block;image-orientation:from-image}
+h1,h2,h3,h4,.disp{font-family:'Marcellus',Georgia,serif;font-weight:400;letter-spacing:.01em;line-height:1.12}
 a{color:inherit;text-decoration:none}
-h1,h2,h3,h4{font-family:"Oswald",sans-serif;font-weight:600;line-height:1.05;letter-spacing:.01em;text-transform:uppercase}
-.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 24px}
-.eyebrow{font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.34em;font-size:12.5px;font-weight:600;color:var(--gold-deep)}
-.section{padding:96px 0}
-.section-head{max-width:640px;margin-bottom:52px}
-.section-head h2{font-size:clamp(30px,5vw,46px);margin:16px 0 14px;color:var(--ink)}
-.section-head p{color:var(--muted);font-size:17px}
-.dark{background:var(--ink);color:var(--white)}
-.dark h2{color:#fff}
-.dark .muted,.dark p{color:#b3adb4}
-.bone-2{background:var(--bone-2)}
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 24px}
+.eyebrow{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--brass);font-weight:600;display:inline-block;margin-bottom:18px}
+section{position:relative}
+.sec-pad{padding:96px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:52px;padding:15px 30px;border-radius:2px;font-weight:500;letter-spacing:.06em;font-size:.86rem;text-transform:uppercase;transition:.35s cubic-bezier(.2,.7,.3,1);cursor:pointer;border:1px solid transparent}
+.btn-brass{background:var(--brass);color:#161206}
+.btn-brass:hover{background:var(--brass-soft);transform:translateY(-2px)}
+.btn-ghost{border-color:rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{border-color:var(--brass);color:var(--brass);transform:translateY(-2px)}
+.btn-dark{background:var(--ink);color:#fff;border-color:var(--ink)}
+.btn-dark:hover{background:#000;transform:translateY(-2px)}
+.btn-outline{border-color:var(--ink);color:var(--ink)}
+.btn-outline:hover{background:var(--ink);color:#fff}
 
-.btn{display:inline-flex;align-items:center;gap:10px;font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.08em;font-weight:600;font-size:15px;padding:15px 26px;border-radius:999px;cursor:pointer;transition:transform .25s ease,box-shadow .25s ease,background .25s ease,color .25s ease;border:1.5px solid transparent;min-height:48px}
-.btn svg{width:18px;height:18px}
-.btn-gold{background:var(--gold);color:#17140e;box-shadow:0 14px 30px -14px rgba(201,162,91,.7)}
-.btn-gold:hover{background:var(--gold-2);transform:translateY(-2px)}
-.btn-dark{background:var(--ink);color:var(--white)}
-.btn-dark:hover{background:var(--ink-3);transform:translateY(-2px)}
-.btn-ghost{background:transparent;border-color:rgba(255,255,255,.34);color:#fff}
-.btn-ghost:hover{border-color:var(--gold);color:var(--gold-2);transform:translateY(-2px)}
-.btn-line{background:transparent;border-color:var(--ink);color:var(--ink)}
-.btn-line:hover{background:var(--ink);color:#fff;transform:translateY(-2px)}
+/* Intro overlay */
+#intro{position:fixed;inset:0;z-index:2000;background:#000;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:22px;transition:opacity .8s ease,visibility .8s}
+#intro .intro-logo{width:min(80vw,380px);opacity:0;transform:translateY(14px) scale(.96);animation:introUp .9s .15s forwards}
+#intro .pole{width:44px;height:2px;background:var(--brass);transform:scaleX(0);transform-origin:center;animation:introLine 1s .6s forwards}
+#intro .tag{color:var(--brass);letter-spacing:.34em;text-transform:uppercase;font-size:.68rem;opacity:0;animation:introFade 1s .9s forwards}
+#intro.done{opacity:0;visibility:hidden}
+@keyframes introUp{to{opacity:1;transform:none}}
+@keyframes introFade{to{opacity:1}}
+@keyframes introLine{to{transform:scaleX(1)}}
 
-#intro{position:fixed;inset:0;z-index:9999;background:var(--ink);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:20px;transition:opacity .7s ease,visibility .7s ease}
-#intro.hide{opacity:0;visibility:hidden}
-#intro .pole{width:9px;height:66px;border-radius:6px;background:repeating-linear-gradient(45deg,var(--gold) 0 8px,#e9e4da 8px 16px,#b9433a 16px 24px);animation:spin 1.1s linear infinite;box-shadow:0 0 0 3px rgba(255,255,255,.06)}
-#intro .il{font-family:"Oswald",sans-serif;color:var(--white);letter-spacing:.3em;text-transform:uppercase;font-size:15px}
-#intro .il b{color:var(--gold-2)}
-@keyframes spin{to{background-position:0 -32px}}
+/* Nav */
+header.nav{position:fixed;top:0;left:0;right:0;z-index:1000;transition:.4s;padding:16px 0;background:transparent}
+header.nav.scrolled{background:rgba(14,13,12,.92);backdrop-filter:blur(10px);padding:8px 0;box-shadow:0 1px 0 var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;align-items:center;gap:11px;color:#fff}
+.logo-img{height:50px;width:auto;display:block;transition:height .3s}
+header.nav.scrolled .logo-img{height:42px}
+footer .logo-img{height:60px}
+.nav-links{display:flex;align-items:center;gap:30px;flex:1 1 auto;justify-content:center}
+.nav-links a.link{color:#f3efe7;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;position:relative;padding:4px 0}
+.nav-links a.link::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:1px;background:var(--brass);transition:.35s}
+.nav-links a.link:hover{color:var(--brass)}
+.nav-links a.link:hover::after{width:100%}
+.nav-call{display:inline-flex;align-items:center;gap:8px;background:var(--brass);color:#161206;padding:10px 18px;border-radius:2px;font-size:.8rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+.nav-call:hover{background:var(--brass-soft)}
+.nav-links .nav-call{display:none}
+.burger{display:none;background:none;border:0;width:44px;height:44px;flex-direction:column;justify-content:center;gap:5px;cursor:pointer}
+.burger span{display:block;height:2px;width:24px;background:#fff;margin:0 auto;transition:.3s}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
-.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+/* Hero */
+.hero{position:relative;min-height:100vh;background:var(--ink);display:flex;align-items:center;overflow:hidden}
+.hero-slides{position:absolute;inset:0;z-index:0}
+.hero-slides .slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.6s ease;filter:grayscale(1) contrast(1.06) brightness(.8)}
+.hero-slides .slide.active{opacity:1}
+.hero-scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(14,13,12,.55) 0%,rgba(14,13,12,.38) 42%,rgba(14,13,12,.82) 100%)}
+.hero-inner{position:relative;z-index:2;padding:150px 0 90px;color:#fff;text-align:center;max-width:900px;margin:0 auto;display:flex;flex-direction:column;align-items:center}
+.hero-inner .eyebrow{color:var(--brass-soft)}
+.hero-logo{width:min(460px,84vw);margin-bottom:26px;filter:drop-shadow(0 18px 40px rgba(0,0,0,.6))}
+.hero h1{font-size:clamp(2.2rem,6vw,4.3rem);color:#fff;max-width:18ch;margin:0 auto 20px}
+.hero h1 em{font-style:normal;color:var(--brass)}
+.hero p.lead{font-size:clamp(1rem,2.4vw,1.2rem);max-width:56ch;color:#e7e2d8;font-weight:300;margin:0 auto 32px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:center}
+.hero-fb{width:52px;height:52px;border:1px solid rgba(255,255,255,.4);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#fff;transition:.35s;flex:none}
+.hero-fb:hover{background:var(--brass);color:#161206;border-color:var(--brass);transform:translateY(-2px)}
+.hero-fb svg{width:20px;height:20px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:26px;margin-top:44px;padding-top:26px;border-top:1px solid rgba(255,255,255,.14);justify-content:center}
+.hero-meta div{color:#efe9dd}
+.hero-meta .n{font-family:'Marcellus',serif;font-size:1.5rem;color:var(--brass)}
+.hero-meta .l{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:#c3bcac}
+
+/* Trust strip */
+.trust{background:var(--ink-2);color:#f2ece0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.trust .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;padding:44px 0}
+.trust .item{display:flex;gap:16px;align-items:flex-start}
+.trust .item svg{width:30px;height:30px;color:var(--brass);flex:none;margin-top:3px}
+.trust .item h4{font-size:1.06rem;color:#fff;margin-bottom:4px;font-family:'Jost',sans-serif;font-weight:600;letter-spacing:.02em}
+.trust .item p{font-size:.9rem;color:#b9b2a3;font-weight:300}
+
+/* Section heading */
+.sec-head{max-width:640px;margin-bottom:52px}
+.sec-head.center{margin:0 auto 52px;text-align:center}
+.sec-head h2{font-size:clamp(1.9rem,4.6vw,3rem)}
+.sec-head p{color:var(--muted);margin-top:14px;font-weight:300}
+
+/* Services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{background:var(--white);border:1px solid var(--bone-2);border-radius:3px;padding:34px 28px;transition:.4s;position:relative;overflow:hidden}
+.svc::before{content:"";position:absolute;left:0;top:0;height:3px;width:0;background:var(--brass);transition:.4s}
+.svc:hover{transform:translateY(-6px);box-shadow:0 26px 50px -30px rgba(14,13,12,.4);border-color:var(--line)}
+.svc:hover::before{width:100%}
+.svc .ic{width:46px;height:46px;color:var(--brass);margin-bottom:20px}
+.svc .ic svg{width:100%;height:100%}
+.svc h3{font-size:1.24rem;margin-bottom:10px}
+.svc p{font-size:.92rem;color:var(--muted);font-weight:300}
+.svc .price{margin-top:16px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);font-weight:600}
+.svc .price span{color:var(--brass)}
+.svc-note{text-align:center;margin-top:34px;font-size:.92rem;color:var(--muted);font-weight:300}
+
+/* About */
+.about{background:var(--bone-2)}
+.about .split{display:grid;grid-template-columns:1fr 1.05fr;gap:60px;align-items:center}
+.about-img{position:relative}
+.about-img img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:3px;filter:saturate(.9) contrast(1.04)}
+.about-img .tag{position:absolute;right:-14px;bottom:-14px;background:var(--brass);color:#161206;padding:16px 20px;border-radius:2px;max-width:190px}
+.about-img .tag b{font-family:'Marcellus',serif;font-size:1.7rem;display:block;line-height:1}
+.about-img .tag span{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}
+.about-copy h2{font-size:clamp(1.9rem,4.4vw,2.8rem);margin-bottom:18px}
+.about-copy p{color:#544f47;margin-bottom:16px;font-weight:300}
+.checklist{list-style:none;margin-top:22px;display:grid;gap:14px}
+.checklist li{display:flex;gap:13px;align-items:flex-start;font-size:.98rem}
+.checklist li svg{width:22px;height:22px;color:var(--brass);flex:none;margin-top:3px}
+.checklist li b{font-weight:600}
+
+/* Gallery */
+.gallery-grid{columns:3;column-gap:16px}
+.gallery-grid img{width:100%;height:auto;border-radius:3px;margin-bottom:16px;break-inside:avoid;transition:.5s;cursor:zoom-in}
+.gallery-grid img:hover{transform:scale(1.01);box-shadow:0 20px 40px -24px rgba(14,13,12,.5)}
+
+/* Video */
+.video{background:var(--bone-2)}
+.video-wrap{max-width:390px;margin:0 auto;aspect-ratio:9/16;border-radius:5px;overflow:hidden;background:#000;border:1px solid var(--line);box-shadow:0 34px 64px -34px rgba(14,13,12,.6)}
+.video-wrap iframe{width:100%;height:100%;border:0;display:block}
+
+/* Crew */
+.crew{background:var(--ink);color:#fff}
+.crew .sec-head h2{color:#fff}
+.crew .sec-head p{color:#b6afa0}
+.badge{display:inline-block;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);border:1px solid var(--line);border-radius:40px;padding:5px 13px;margin-bottom:16px}
+.crew-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.crew-card{background:var(--ink-2);border:1px solid rgba(195,160,84,.16);border-radius:3px;padding:32px 26px;text-align:center;transition:.4s}
+.crew-card:hover{transform:translateY(-6px);border-color:var(--brass)}
+.avatar{width:82px;height:82px;border-radius:50%;background:#0c0b0a;border:2px solid var(--brass);display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-family:'Marcellus',serif;font-size:1.5rem;color:var(--brass)}
+.crew-card h3{font-size:1.22rem;color:#fff;margin-bottom:4px}
+.crew-card .role{color:var(--brass);font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
+.crew-card p{font-size:.9rem;color:#b6afa0;font-weight:300}
+
+/* Reviews */
+.reviews{background:var(--bone)}
+.rev-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:44px}
+.rev-score{display:flex;align-items:center;gap:14px}
+.rev-score .num{font-family:'Marcellus',serif;font-size:2.6rem;line-height:1}
+.rev-score .g{font-size:.82rem;color:var(--muted)}
+.stars{color:var(--brass);letter-spacing:2px;font-size:1rem}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rev-card{background:var(--white);border:1px solid var(--bone-2);border-radius:3px;padding:28px 26px;transition:.4s}
+.rev-card:hover{box-shadow:0 22px 44px -30px rgba(14,13,12,.4);transform:translateY(-4px)}
+.rev-card .stars{margin-bottom:12px}
+.rev-card p.text{font-size:.96rem;color:#4a463f;font-weight:300;margin-bottom:20px}
+.rev-card .who{display:flex;align-items:center;gap:12px}
+.rev-card .who .in{width:42px;height:42px;border-radius:50%;background:var(--ink);color:var(--brass);display:flex;align-items:center;justify-content:center;font-family:'Marcellus',serif;font-size:1rem}
+.rev-card .who b{font-size:.95rem;display:block}
+.rev-card .who span{font-size:.76rem;color:var(--muted)}
+.rev-note{text-align:center;margin-top:30px;font-size:.82rem;color:var(--muted)}
+
+/* Review banner */
+.rev-banner{background:var(--ink);color:#fff;text-align:center;padding:80px 0;position:relative}
+.rev-banner::after{content:"";position:absolute;inset:0;background:url(img/g4.jpg) center/cover;opacity:.08}
+.rev-banner .in{position:relative;z-index:1}
+.rev-banner h2{font-size:clamp(1.8rem,4.2vw,2.7rem);margin-bottom:14px}
+.rev-banner p{color:#c3bcac;max-width:46ch;margin:0 auto 30px;font-weight:300}
+
+/* Contact */
+.contact{background:var(--ink);color:#fff;border-top:1px solid var(--line)}
+.contact .split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.contact .eyebrow{color:var(--brass-soft)}
+.contact h2{font-size:clamp(1.9rem,4.4vw,2.8rem);color:#fff;margin-bottom:16px}
+.contact p.sub{color:#c3bcac;font-weight:300;margin-bottom:26px;max-width:44ch}
+.cinfo{display:grid;gap:16px;margin-bottom:26px}
+.cinfo a,.cinfo div{display:flex;gap:14px;align-items:center;color:#efe9dd;font-size:1rem}
+.cinfo svg{width:22px;height:22px;color:var(--brass);flex:none}
+.socials{display:flex;gap:12px;margin-top:6px}
+.socials a{width:44px;height:44px;border:1px solid rgba(255,255,255,.22);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#efe9dd;transition:.35s}
+.socials a:hover{background:var(--brass);color:#161206;border-color:var(--brass);transform:translateY(-3px)}
+.socials svg{width:19px;height:19px}
+.contact-card{background:var(--ink-2);border:1px solid var(--line);border-radius:4px;padding:38px 32px}
+.contact-card h3{font-family:'Marcellus',serif;font-size:1.4rem;margin-bottom:8px;color:#fff}
+.contact-card p{color:#b6afa0;font-size:.92rem;font-weight:300;margin-bottom:24px}
+.contact-card .btn{width:100%;margin-bottom:12px}
+.contact-card .hours{margin-top:22px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-size:.86rem;color:#c3bcac}
+.contact-card .hours .row{display:flex;justify-content:space-between;padding:3px 0}
+
+/* Map */
+.map-sec{background:var(--ink);padding-bottom:70px}
+.map-wrap{border-radius:4px;overflow:hidden;border:1px solid var(--line);line-height:0}
+.map-wrap iframe{width:100%;height:420px;border:0;filter:grayscale(.3) contrast(1.05)}
+
+/* Footer */
+footer{background:#090807;color:#b6afa0;padding:60px 0 34px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:38px;border-bottom:1px solid rgba(255,255,255,.09)}
+.foot-brand .logo{margin-bottom:16px}
+.foot-brand p{font-size:.9rem;font-weight:300;max-width:34ch}
+.foot-col h4{color:#fff;font-family:'Jost',sans-serif;font-weight:600;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px}
+.foot-col a{display:block;font-size:.92rem;margin-bottom:10px;font-weight:300;transition:.3s}
+.foot-col a:hover{color:var(--brass)}
+.foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;padding-top:26px;font-size:.82rem}
+.foot-bottom .socials a{width:38px;height:38px}
+
+.reveal{opacity:0;transform:translateY(26px);transition:.8s cubic-bezier(.2,.7,.3,1)}
 .reveal.in{opacity:1;transform:none}
 
-header.nav{position:sticky;top:0;z-index:900;background:rgba(17,16,19,.82);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
-.nav-in{display:flex;align-items:center;justify-content:space-between;height:74px}
-.brand{display:flex;align-items:center;gap:12px;color:#fff}
-.brand .mark{width:40px;height:40px;border-radius:10px;background:var(--ink-3);border:1px solid rgba(201,162,91,.5);display:grid;place-items:center;font-family:"Oswald",sans-serif;color:var(--gold-2);font-weight:700;font-size:17px;letter-spacing:.02em}
-.brand b{font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.14em;font-size:17px;font-weight:600;color:#fff;line-height:1;display:block}
-.brand em{display:block;font-family:"Mulish";font-size:10.5px;letter-spacing:.24em;color:var(--gold);text-transform:uppercase;margin-top:3px;font-style:normal}
-.nav-links{display:flex;align-items:center;gap:30px}
-.nav-links a.link{font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.09em;font-size:14px;color:#d8d3da;font-weight:500;transition:color .2s}
-.nav-links a.link:hover{color:var(--gold-2)}
-.nav-cta{display:flex;align-items:center;gap:12px}
-.nav-cta .btn{padding:11px 20px;min-height:44px}
-.burger{display:none;background:none;border:1px solid rgba(255,255,255,.24);border-radius:10px;width:46px;height:44px;cursor:pointer;flex-direction:column;gap:5px;align-items:center;justify-content:center}
-.burger span{width:22px;height:2px;background:#fff;border-radius:2px;transition:.3s}
-.mobile-menu{display:none;background:var(--ink-2);border-bottom:1px solid rgba(255,255,255,.08)}
-.mobile-menu.open{display:block}
-.mobile-menu a{display:block;padding:15px 24px;color:#e2dde4;font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.08em;font-size:16px;border-bottom:1px solid rgba(255,255,255,.06)}
-.mobile-menu .mrow{display:flex;gap:12px;padding:18px 24px}
-.mobile-menu .mrow .btn{flex:1;justify-content:center}
-
-.hero{position:relative;min-height:92vh;background:var(--ink);display:flex;align-items:flex-end;overflow:hidden}
-.hero-bg{position:absolute;inset:0;z-index:0}
-.hero-bg .slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.6s ease;filter:saturate(.82) contrast(1.05)}
-.hero-bg .slide.on{opacity:1}
-.hero-scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(17,16,19,.62) 0%,rgba(17,16,19,.5) 40%,rgba(17,16,19,.9) 100%)}
-.hero-in{position:relative;z-index:2;padding:120px 0 64px;max-width:760px}
-.hero .eyebrow{color:var(--gold-2)}
-.hero h1{color:#fff;font-size:clamp(38px,7vw,72px);font-weight:700;margin:18px 0 20px;letter-spacing:.005em}
-.hero h1 em{font-style:normal;color:var(--gold-2)}
-.hero p.lead{color:#e4dfe4;font-size:clamp(17px,2.4vw,20px);max-width:560px;margin-bottom:30px}
-.hero-cta{display:flex;flex-wrap:wrap;gap:14px}
-.rating-badge{display:inline-flex;align-items:center;gap:14px;margin-top:30px;padding:14px 20px;border-radius:14px;background:rgba(255,255,255,.08);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.16)}
-.rating-badge .stars{color:var(--gold-2);letter-spacing:2px;font-size:16px}
-.rating-badge b{font-family:"Oswald";color:#fff;font-size:19px;letter-spacing:.02em}
-.rating-badge small{display:block;color:#c8c3ca;font-size:12.5px;letter-spacing:.03em}
-
-.trust{background:var(--ink-2);border-top:1px solid rgba(255,255,255,.06)}
-.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.trust-item{display:flex;gap:16px;align-items:flex-start;padding:34px 24px}
-.trust-item+.trust-item{border-left:1px solid rgba(255,255,255,.07)}
-.trust-item .ic{flex:none;width:46px;height:46px;border-radius:12px;background:rgba(201,162,91,.14);border:1px solid rgba(201,162,91,.4);display:grid;place-items:center;color:var(--gold-2)}
-.trust-item h4{color:#fff;font-size:18px;letter-spacing:.05em;margin-bottom:4px}
-.trust-item p{color:#a8a2aa;font-size:14.5px;line-height:1.5}
-
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.svc-card{background:var(--paper);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);transition:transform .3s ease,box-shadow .3s ease}
-.svc-card:hover{transform:translateY(-6px);box-shadow:0 34px 70px -30px rgba(17,16,19,.55)}
-.svc-card .ph{aspect-ratio:16/10;overflow:hidden}
-.svc-card .ph img{width:100%;height:100%;object-fit:cover;filter:saturate(.82) contrast(1.05);transition:transform .6s ease}
-.svc-card:hover .ph img{transform:scale(1.06)}
-.svc-body{padding:24px 24px 26px}
-.svc-body h3{font-size:22px;color:var(--ink);margin-bottom:8px;display:flex;justify-content:space-between;align-items:baseline;gap:10px}
-.svc-body h3 .price{font-size:16px;color:var(--gold-deep);font-weight:600;white-space:nowrap}
-.svc-body p{color:var(--muted);font-size:15px}
-
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.about-media{position:relative}
-.about-media img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);filter:saturate(.82) contrast(1.05)}
-.about-media .tag{position:absolute;left:-14px;bottom:26px;background:var(--gold);color:#17140e;font-family:"Oswald";text-transform:uppercase;letter-spacing:.08em;font-weight:600;font-size:14px;padding:12px 20px;border-radius:10px;box-shadow:var(--shadow)}
-.about-copy h2{font-size:clamp(30px,4.5vw,44px);color:var(--ink);margin:14px 0 18px}
-.about-copy p{color:#4c494e;margin-bottom:16px}
-.checks{list-style:none;margin-top:22px;display:grid;gap:12px}
-.checks li{display:flex;gap:13px;align-items:flex-start;font-weight:600;color:var(--ink);font-size:16px}
-.checks li svg{flex:none;width:24px;height:24px;color:var(--gold-deep);margin-top:1px}
-
-.crew-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:760px}
-.crew-card{background:var(--ink-2);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:32px 28px;display:flex;gap:20px;align-items:center}
-.crew-card .av{flex:none;width:74px;height:74px;border-radius:50%;background:var(--ink-3);border:2px solid var(--gold);display:grid;place-items:center;font-family:"Oswald";font-size:26px;color:var(--gold-2);font-weight:600}
-.crew-card h3{color:#fff;font-size:21px;letter-spacing:.04em}
-.crew-card .role{color:var(--gold-2);font-family:"Oswald";text-transform:uppercase;letter-spacing:.1em;font-size:12.5px;margin:3px 0 8px}
-.crew-card p{color:#a8a2aa;font-size:14.5px;line-height:1.5}
-.badge-note{display:inline-block;margin-top:18px;font-size:12.5px;color:var(--muted);font-style:italic}
-.dark .badge-note{color:#8f8992}
-
-.rev-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-.rev-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
-.rev-card .stars{color:var(--gold);letter-spacing:2px;font-size:15px;margin-bottom:12px}
-.rev-card p{color:#3c3a3e;font-size:15.5px;margin-bottom:18px}
-.rev-card .who{display:flex;align-items:center;gap:12px}
-.rev-card .who .ini{width:44px;height:44px;border-radius:50%;background:var(--ink);color:var(--gold-2);display:grid;place-items:center;font-family:"Oswald";font-weight:600;font-size:16px}
-.rev-card .who b{display:block;font-family:"Oswald";text-transform:uppercase;letter-spacing:.05em;color:var(--ink);font-size:15px}
-.rev-card .who small{color:var(--muted);font-size:13px}
-.rev-actions{margin-top:36px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
-
-.review-banner{background:var(--ink);text-align:center}
-.review-banner .wrap{padding-top:70px;padding-bottom:70px}
-.review-banner h2{font-size:clamp(28px,4.5vw,42px);color:#fff;margin-bottom:12px}
-.review-banner p{color:#b3adb4;max-width:560px;margin:0 auto 26px}
-
-.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px}
-.contact-info .row{display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.1)}
-.contact-info .row:first-of-type{padding-top:0}
-.contact-info .ic{flex:none;width:44px;height:44px;border-radius:11px;background:rgba(201,162,91,.14);border:1px solid rgba(201,162,91,.4);display:grid;place-items:center;color:var(--gold-2)}
-.contact-info .row b{display:block;font-family:"Oswald";text-transform:uppercase;letter-spacing:.06em;color:#fff;font-size:14px;margin-bottom:3px}
-.contact-info .row a,.contact-info .row span{color:#c3bec6;font-size:15.5px}
-.contact-info .row a:hover{color:var(--gold-2)}
-.hours-list{list-style:none;font-size:15px;color:#c3bec6}
-.hours-list li{display:flex;justify-content:space-between;max-width:280px;padding:3px 0}
-.hours-list li span:last-child{color:#fff}
-.contact-card{background:var(--ink-2);border:1px solid rgba(255,255,255,.09);border-radius:var(--radius);padding:36px}
-.contact-card h3{color:#fff;font-size:24px;margin-bottom:8px}
-.contact-card p{color:#a8a2aa;font-size:15px;margin-bottom:24px}
-.contact-card .btn{width:100%;justify-content:center;margin-bottom:14px}
-.socials{display:flex;gap:12px;margin-top:6px}
-.socials a{width:46px;height:46px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);display:grid;place-items:center;color:#d8d3da;transition:.25s}
-.socials a:hover{background:var(--gold);color:#17140e;border-color:var(--gold);transform:translateY(-3px)}
-.socials a svg{width:20px;height:20px}
-
-.map-wrap{padding:0 24px}
-.map-inner{max-width:var(--wrap);margin:0 auto}
-.map-inner iframe{width:100%;height:420px;border:0;border-radius:var(--radius);filter:saturate(.9) contrast(1.02);box-shadow:var(--shadow);display:block}
-
-footer{background:var(--ink);color:#b3adb4;padding:64px 0 34px;border-top:1px solid rgba(255,255,255,.07)}
-.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:44px}
-.foot-grid h4{color:#fff;font-size:16px;letter-spacing:.08em;margin-bottom:16px}
-.foot-grid p{font-size:14.5px;line-height:1.7}
-.foot-grid a{display:block;color:#b3adb4;font-size:14.5px;padding:5px 0;transition:color .2s}
-.foot-grid a:hover{color:var(--gold-2)}
-.foot-brand .brand{margin-bottom:16px}
-.foot-bottom{border-top:1px solid rgba(255,255,255,.09);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13.5px}
-.foot-bottom a{color:#b3adb4}.foot-bottom a:hover{color:var(--gold-2)}
-
 @media(max-width:900px){
-  .section{padding:70px 0}
-  .trust-grid{grid-template-columns:1fr}
-  .trust-item+.trust-item{border-left:0;border-top:1px solid rgba(255,255,255,.07)}
-  .svc-grid{grid-template-columns:1fr 1fr}
-  .about-grid{grid-template-columns:1fr;gap:34px}
-  .about-media .tag{left:16px}
-  .contact-grid{grid-template-columns:1fr;gap:30px}
+  .svc-grid,.crew-grid,.rev-grid{grid-template-columns:1fr 1fr}
+  .about .split,.contact .split{grid-template-columns:1fr;gap:40px}
+  .about-img .tag{right:14px}
+  .gallery-grid{columns:2}
   .foot-grid{grid-template-columns:1fr 1fr}
+  .nav-links{flex:none}
 }
 @media(max-width:640px){
   body{font-size:16px}
-  .nav-links,.nav-cta .callbtn{display:none}
+  .sec-pad{padding:66px 0}
+  .nav-links{position:fixed;top:0;right:0;height:100dvh;width:min(80vw,320px);background:var(--ink);flex-direction:column;justify-content:center;gap:26px;transform:translateX(100%);transition:.4s;box-shadow:-20px 0 60px rgba(0,0,0,.5);padding:40px}
+  .nav-links.open{transform:none}
+  .nav-links a.link{font-size:1.05rem}
   .burger{display:flex}
-  .hero{min-height:88vh}
-  .hero-in{padding-top:80px}
-  .hero-cta{flex-direction:column;align-items:stretch}
-  .hero-cta .btn{justify-content:center}
-  .svc-grid{grid-template-columns:1fr}
-  .crew-grid{grid-template-columns:1fr}
-  .rev-grid{grid-template-columns:1fr}
-  .foot-grid{grid-template-columns:1fr;gap:28px}
-  .map-inner iframe{height:340px}
-  .section-head{margin-bottom:36px}
+  .nav-call.desk{display:none}
+  .nav-links .nav-call{display:inline-flex}
+  .svc-grid,.crew-grid,.rev-grid,.foot-grid{grid-template-columns:1fr}
+  .gallery-grid{columns:2;column-gap:12px}
+  .trust .grid{grid-template-columns:1fr;gap:24px;padding:36px 0}
+  .hero-meta{gap:20px}
+  .hero-cta .btn{flex:1 1 100%}
+  .about-img .tag{position:static;margin-top:14px;max-width:none;display:inline-flex;gap:14px;align-items:center}
+  .about-img .tag b{font-size:1.4rem}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-slides .slide{transition:none}
+  .reveal{opacity:1;transform:none;transition:none}
+  #intro .intro-logo,#intro .pole,#intro .tag{animation:none;opacity:1;transform:none}
 }
 </style>
 </head>
 <body>
 
 <div id="intro" aria-hidden="true">
+  <img class="intro-logo" src="img/logo.png" alt="True School Barbers">
   <div class="pole"></div>
-  <div class="il"><b>TRUE SCHOOL</b> BARBERS</div>
+  <div class="tag">Invercargill · Est. 2024</div>
 </div>
 
-<header class="nav">
-  <div class="wrap nav-in">
-    <a href="#top" class="brand" aria-label="True School Barbers home">
-      <span class="mark">TS</span>
-      <span><b>True School Barbers</b><em>Invercargill</em></span>
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="logo" aria-label="True School Barbers home">
+      <img src="img/logo.png" alt="True School Barbers" class="logo-img">
     </a>
-    <nav class="nav-links" aria-label="Primary">
+    <nav class="nav-links" id="menu">
       <a class="link" href="#services">Services</a>
       <a class="link" href="#about">About</a>
-      <a class="link" href="#crew">The Chair</a>
+      <a class="link" href="#gallery">Gallery</a>
+      <a class="link" href="#crew">Barbers</a>
       <a class="link" href="#reviews">Reviews</a>
       <a class="link" href="#contact">Contact</a>
+      <a class="nav-call" href="https://bookings.gettimely.com/trueschoolbarbers/book" target="_blank" rel="noopener" style="margin-top:8px">Book online</a>
     </nav>
-    <div class="nav-cta">
-      <a class="btn btn-ghost callbtn" href="tel:+64211530128">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.94.35 1.86.66 2.75a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.33-1.33a2 2 0 0 1 2.11-.45c.89.31 1.81.53 2.75.66A2 2 0 0 1 22 16.92z"/></svg>
-        021 153 0128
-      </a>
-      <a class="btn btn-gold" href="https://bookings.gettimely.com/trueschoolbarbers/bb/book" target="_blank" rel="noopener">Book Now</a>
-      <button class="burger" aria-label="Open menu" id="burger"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#crew">The Chair</a>
-    <a href="#reviews">Reviews</a>
-    <a href="#contact">Contact</a>
-    <div class="mrow">
-      <a class="btn btn-line" href="tel:+64211530128" style="color:#fff;border-color:rgba(255,255,255,.35)">Call</a>
-      <a class="btn btn-gold" href="https://bookings.gettimely.com/trueschoolbarbers/bb/book" target="_blank" rel="noopener">Book</a>
-    </div>
+    <a class="nav-call desk" href="https://bookings.gettimely.com/trueschoolbarbers/book" target="_blank" rel="noopener">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+      Book online
+    </a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
 
+<main id="top">
+
 <!-- HERO -->
-<section class="hero" id="top">
-  <div class="hero-bg" id="heroBg">
-    <div class="slide on" style="background-image:url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1900&q=80')"></div>
-    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1900&q=80')"></div>
-    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1900&q=80')"></div>
-    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1503443207922-dff7d543fd0e?auto=format&fit=crop&w=1900&q=80')"></div>
+<section class="hero" id="hero">
+  <div class="hero-slides" id="slides">
+    <div class="slide active" style="background-image:url(img/hero1.jpg)"></div>
+    <div class="slide" data-bg="img/hero2.jpg"></div>
+    <div class="slide" data-bg="img/hero3.jpg"></div>
   </div>
   <div class="hero-scrim"></div>
-  <div class="wrap hero-in">
-    <p class="eyebrow">Invercargill · Traditional Barbershop</p>
-    <h1>Sharp fades and classic cuts <em>done proper</em> in Invercargill.</h1>
-    <p class="lead">Skin fades, scissor work, beard line-ups and hot-towel shaves at 52 Victoria Avenue. Walk in for a tidy-up or book your chair online.</p>
+  <div class="wrap hero-inner">
+    <img class="hero-logo" src="img/logo.png" alt="True School Barbers, Invercargill">
+    <span class="eyebrow">Avenal, Invercargill · Barbers</span>
+    <h1>Fresh fades and clean cuts, <em>done right.</em></h1>
+    <p class="lead">A proper Southland barber chair on Victoria Avenue. Skin fades, classic cuts, beard work, hair art and straight-razor wet shaves, for the young fellas through to the gents. Book online and see live times.</p>
     <div class="hero-cta">
-      <a class="btn btn-gold" href="https://bookings.gettimely.com/trueschoolbarbers/bb/book" target="_blank" rel="noopener">Book a chair</a>
-      <a class="btn btn-ghost" href="tel:+64211530128">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.94.35 1.86.66 2.75a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.33-1.33a2 2 0 0 1 2.11-.45c.89.31 1.81.53 2.75.66A2 2 0 0 1 22 16.92z"/></svg>
-        Call 021 153 0128
+      <a class="btn btn-brass" href="https://bookings.gettimely.com/trueschoolbarbers/book" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        Book online
+      </a>
+      <a class="btn btn-ghost" href="#services">View services</a>
+      <a class="hero-fb" href="https://www.facebook.com/p/True-School-Barbers-61563600298097/" target="_blank" rel="noopener" aria-label="True School Barbers on Facebook">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
       </a>
     </div>
-    <div class="rating-badge">
-      <span class="stars">★★★★★</span>
-      <div><b>Loved by locals</b><small>100% recommended · 21+ reviews</small></div>
+    <div class="hero-meta">
+      <div><span class="n">★ 5.0</span><br><span class="l">Google &amp; Facebook</span></div>
+      <div><span class="n">Est. 2024</span><br><span class="l">Southland barbers</span></div>
+      <div><span class="n">Walk-ins</span><br><span class="l">When spots are free</span></div>
     </div>
   </div>
 </section>
@@ -283,300 +320,368 @@ footer{background:var(--ink);color:#b3adb4;padding:64px 0 34px;border-top:1px so
 <!-- TRUST -->
 <section class="trust">
   <div class="wrap">
-    <div class="trust-grid">
-      <div class="trust-item reveal">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
-        <div><h4>Right in Avenal</h4><p>52 Victoria Avenue — easy parking, a stroll from central Invercargill.</p></div>
+    <div class="grid">
+      <div class="item reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div><h4>52 Victoria Avenue, Avenal</h4><p>Right here in Invercargill, easy to find and easy to park.</p></div>
       </div>
-      <div class="trust-item reveal">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
-        <div><h4>Walk in or book</h4><p>Open Tuesday to Saturday. Grab a walk-in or lock in your time online.</p></div>
+      <div class="item reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        <div><h4>Book online, any time</h4><p>Pick your service and time on our booking page and see live availability.</p></div>
       </div>
-      <div class="trust-item reveal">
-        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 4.5 20 10l-9.5 9.5L3 20l.5-7.5L13 3z"/><path d="M13 3l4 4"/></svg></span>
-        <div><h4>Old-school care</h4><p>Skin fades to hot-towel shaves — finished sharp, every single visit.</p></div>
+      <div class="item reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 6L9 17l-5-5"/></svg>
+        <div><h4>A cut worth keeping</h4><p>We take the time to get the shape right, from kids' cuts to full wet shaves.</p></div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- SERVICES -->
-<section class="section bone-2" id="services">
+<section class="sec-pad" id="services">
   <div class="wrap">
-    <div class="section-head reveal">
-      <p class="eyebrow">What we do</p>
-      <h2>Cuts, fades &amp; shaves</h2>
-      <p>Every service finished with clean lines and a hot-towel neck. Prices are a guide — the final price depends on hair length and detail.</p>
+    <div class="sec-head center reveal">
+      <span class="eyebrow">The Chair</span>
+      <h2>Services &amp; prices</h2>
+      <p>Real prices straight from our booking page. Tap any service to grab a time online.</p>
     </div>
     <div class="svc-grid">
-      <article class="svc-card reveal">
-        <div class="ph"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=80" alt="Barber finishing a skin fade" loading="lazy" width="900" height="563"></div>
-        <div class="svc-body"><h3>Skin &amp; Scissor Fade <span class="price">from $35</span></h3><p>A crisp fade blended to the skin, or a soft scissor blend up top — cut to suit your head and how you wear it.</p></div>
-      </article>
-      <article class="svc-card reveal">
-        <div class="ph"><img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=900&q=80" alt="Beard being trimmed and lined up" loading="lazy" width="900" height="563"></div>
-        <div class="svc-body"><h3>Beard Trim &amp; Line-up <span class="price">from $20</span></h3><p>Shaped, tidied and lined off with the razor so the jaw and cheeks sit sharp. Add it to any cut.</p></div>
-      </article>
-      <article class="svc-card reveal">
-        <div class="ph"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=80" alt="Hot towel and straight razor shave" loading="lazy" width="900" height="563"></div>
-        <div class="svc-body"><h3>Hot Towel Shave <span class="price">from $40</span></h3><p>The full sit-back — hot towels, lather and a close straight-razor finish. The proper old-school treatment.</p></div>
-      </article>
-      <article class="svc-card reveal">
-        <div class="ph"><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=900&q=80" alt="Young client getting a haircut" loading="lazy" width="900" height="563"></div>
-        <div class="svc-body"><h3>Kids &amp; Student Cuts <span class="price">from $25</span></h3><p>Quick, patient and no fuss for the young fellas and students. School-holiday-friendly and easy on the wallet.</p></div>
-      </article>
-      <article class="svc-card reveal">
-        <div class="ph"><img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=900&q=80" alt="Full haircut and beard service" loading="lazy" width="900" height="563"></div>
-        <div class="svc-body"><h3>Cut &amp; Beard Combo <span class="price">from $50</span></h3><p>The full reset — fresh cut plus a shaped, lined-up beard so you walk out looking properly squared away.</p></div>
-      </article>
-      <article class="svc-card reveal">
-        <div class="ph"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80" alt="Barbershop chair ready for the next client" loading="lazy" width="900" height="563"></div>
-        <div class="svc-body"><h3>Buzz &amp; Tidy-up <span class="price">from $25</span></h3><p>A one-length buzz, or a neckline and around-the-ears tidy between full cuts. In, sorted, out.</p></div>
-      </article>
+      <a class="svc reveal" href="https://bookings.gettimely.com/trueschoolbarbers/book" target="_blank" rel="noopener">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"/></svg></div>
+        <h3>Fade</h3>
+        <p>A sharp skin or blended fade, shaped up and finished clean. 30 minutes in the chair.</p>
+        <div class="price"><span>$45</span> · Book online →</div>
+      </a>
+      <a class="svc reveal" href="https://bookings.gettimely.com/trueschoolbarbers/book" target="_blank" rel="noopener">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h16M4 17h10"/><circle cx="19" cy="17" r="2"/></svg></div>
+        <h3>Standard Classic Cut</h3>
+        <p>A timeless scissor-and-clipper cut, tidied and styled the way you like it. 30 minutes.</p>
+        <div class="price"><span>$40</span> · Book online →</div>
+      </a>
+      <a class="svc reveal" href="https://bookings.gettimely.com/trueschoolbarbers/book" target="_blank" rel="noopener">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l6 6 6-6M6 18l6-6"/></svg></div>
+        <h3>Scissor Cut</h3>
+        <p>All-scissor work for a softer, natural finish with the length kept where you want it. 45 minutes.</p>
+        <div class="price"><span>$50</span> · Book online →</div>
+      </a>
+      <a class="svc reveal" href="https://bookings.gettimely.com/trueschoolbarbers/book" target="_blank" rel="noopener">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21l6-6M9 15l9-9a2.8 2.8 0 0 0-4-4L5 11z"/><path d="M12 8l4 4"/></svg></div>
+        <h3>Buzz Cut</h3>
+        <p>A quick, clean all-over buzz. In and out in 15 minutes and looking sharp.</p>
+        <div class="price"><span>$25</span> · Book online →</div>
+      </a>
+      <a class="svc reveal" href="https://bookings.gettimely.com/trueschoolbarbers/book" target="_blank" rel="noopener">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4c4 0 6 4 8 4s4-4 8-4c0 6-4 10-8 10S4 10 4 4z"/><path d="M12 14v6"/></svg></div>
+        <h3>Cut &amp; Beard</h3>
+        <p>A fresh fade or classic cut with a matching beard trim so it all lines up. From $50.</p>
+        <div class="price">From <span>$50</span> · Book online →</div>
+      </a>
+      <a class="svc reveal" href="https://bookings.gettimely.com/trueschoolbarbers/book" target="_blank" rel="noopener">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4c4 0 6 4 8 4s4-4 8-4c0 6-4 10-8 10S4 10 4 4z"/><path d="M8 20h8"/></svg></div>
+        <h3>Beard Trim</h3>
+        <p>Line-up, shape and tidy with clipper and razor detailing. 30 minutes.</p>
+        <div class="price"><span>$30</span> · Book online →</div>
+      </a>
+      <a class="svc reveal" href="https://bookings.gettimely.com/trueschoolbarbers/book" target="_blank" rel="noopener">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21l14-14M14 4l6 6M17 7l-2-2"/></svg></div>
+        <h3>Wet Shave / Straight Razor</h3>
+        <p>A traditional razor shave, full head, full face, or face and beard. From $50 up to $100.</p>
+        <div class="price">From <span>$50</span> · Book online →</div>
+      </a>
+      <a class="svc reveal" href="https://bookings.gettimely.com/trueschoolbarbers/book" target="_blank" rel="noopener">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M5 21c0-4 3-6 7-6s7 2 7 6"/></svg></div>
+        <h3>Youth Cuts</h3>
+        <p>Patient cuts and fades for the young ones. Under 10 from $25, under 15 from $35.</p>
+        <div class="price">From <span>$25</span> · Book online →</div>
+      </a>
+      <a class="svc reveal" href="https://bookings.gettimely.com/trueschoolbarbers/book" target="_blank" rel="noopener">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l2.4 7.4H22l-6 4.3 2.3 7.3L12 16.9 5.7 21l2.3-7.3-6-4.3h7.6z"/></svg></div>
+        <h3>Hair Art Designs</h3>
+        <p>Custom razor designs and hair art added to any cut. Priced by size, just ask in the chair.</p>
+        <div class="price">Varies · Book online →</div>
+      </a>
     </div>
+    <p class="svc-note">Full menu and live times on our <a href="https://bookings.gettimely.com/trueschoolbarbers/book" target="_blank" rel="noopener" style="color:var(--brass);font-weight:600">Timely booking page</a>.</p>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section class="section" id="about">
-  <div class="wrap about-grid">
-    <div class="about-media reveal">
-      <img src="https://images.unsplash.com/photo-1503443207922-dff7d543fd0e?auto=format&fit=crop&w=1100&q=80" alt="Inside True School Barbers" width="1100" height="825" loading="lazy">
-      <span class="tag">Est. Invercargill</span>
+<section class="about sec-pad" id="about">
+  <div class="wrap">
+    <div class="split">
+      <div class="about-img reveal">
+        <img src="img/about.jpg" alt="Barber working on a fresh fade at True School Barbers in Invercargill" width="1254" height="1254" loading="lazy">
+        <div class="tag"><b>5.0</b><span>★★★★★<br>Google reviews</span></div>
+      </div>
+      <div class="about-copy reveal">
+        <span class="eyebrow">About the shop</span>
+        <h2>Invercargill's home for a proper cut</h2>
+        <p>True School Barbers set up on Victoria Avenue in Avenal to give Southland blokes a barber chair worth coming back to. Pull up, tell us what you're after, and we'll sort the shape, the fade and the finish.</p>
+        <p>From the young fellas' first cut to a full wet shave before a big day, you get honest barbering, a good yarn, and a fresh look every time. Book your chair online and see exactly when we're free.</p>
+        <ul class="checklist">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span><b>Every age welcome</b> — kids, gents and everyone between.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span><b>Fades to straight razors</b> — the full traditional barber range.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span><b>Easy online booking</b> — pick your time on Timely, walk-ins when free.</span></li>
+        </ul>
+        <a class="btn btn-outline" href="https://bookings.gettimely.com/trueschoolbarbers/book" target="_blank" rel="noopener" style="margin-top:28px">Book your chair</a>
+      </div>
     </div>
-    <div class="about-copy reveal">
-      <p class="eyebrow">The shop</p>
-      <h2>A proper barbershop, not a quick clip</h2>
-      <p>True School Barbers is a local Invercargill shop built on the old-school idea that a haircut should be worth sitting down for. Mason and the crew take the time to get the shape right, tidy every line and send you out feeling sorted.</p>
-      <p>Whether it's a weekly skin fade, a beard shape-up or the full hot-towel shave, you get honest barbering, good chat and a clean chair every time.</p>
-      <ul class="checks">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Locally owned and run in Avenal, Invercargill</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Walk-ins welcome, or book your chair online</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>Clean tools, hot towels and no rushed cuts</li>
-      </ul>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="sec-pad" id="gallery">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">The Look</span>
+      <h2>Fresh out the chair</h2>
+      <p>Fades, kids' cuts, beard work and the shop itself — the kind of finish you'll walk out with.</p>
+    </div>
+    <div class="gallery-grid reveal">
+      <img src="img/g1.jpg" alt="Fresh fade and cut at True School Barbers" width="736" height="1000" loading="lazy">
+      <img src="img/g7.jpg" alt="True School Barbers outside the Invercargill shop" width="1122" height="1402" loading="lazy">
+      <img src="img/g4.jpg" alt="Two young lads with fresh cuts at True School Barbers" width="1564" height="1564" loading="lazy">
+      <img src="img/g2.jpg" alt="Clean fade from the back at True School Barbers" width="1296" height="2048" loading="lazy">
+      <img src="img/g3.jpg" alt="Fresh haircuts on two young clients" width="1254" height="1254" loading="lazy">
+      <img src="img/g5.jpg" alt="Kids' cuts at True School Barbers Invercargill" width="1254" height="1254" loading="lazy">
+      <img src="img/g6.jpg" alt="Fresh trim at the True School Barbers chair" width="1049" height="1020" loading="lazy">
+      <img src="img/g8.jpg" alt="True School Barbers styling products" width="1180" height="893" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="video sec-pad" id="watch">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">In the chair</span>
+      <h2>See us at work</h2>
+      <p>A quick look inside True School Barbers, straight from our Facebook.</p>
+    </div>
+    <div class="video-wrap reveal">
+      <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1937425553769932&show_text=false&width=360&t=0" scrolling="no" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen="true" title="True School Barbers reel"></iframe>
     </div>
   </div>
 </section>
 
 <!-- CREW -->
-<section class="section dark" id="crew">
+<section class="crew sec-pad" id="crew">
   <div class="wrap">
-    <div class="section-head reveal">
-      <p class="eyebrow">In the chair</p>
-      <h2>The crew</h2>
-      <p class="muted">Friendly, skilled and here to make sure you leave looking sharp.</p>
+    <div class="sec-head center reveal">
+      <span class="badge">The team</span>
+      <h2>Meet the barbers</h2>
+      <p>The chairs are run by hands that know Southland heads and take pride in the finish.</p>
     </div>
     <div class="crew-grid">
-      <div class="crew-card reveal">
-        <span class="av">MA</span>
-        <div>
-          <h3>Mason</h3>
-          <div class="role">Owner &amp; Barber</div>
-          <p>Runs the shop and the chair — fades, classic cuts and razor work, with the time taken to get it right.</p>
-        </div>
-      </div>
-      <div class="crew-card reveal">
-        <span class="av">TS</span>
-        <div>
-          <h3>The Chair</h3>
-          <div class="role">Barber</div>
-          <p>Cuts, beard shapes and tidy-ups for the regulars and the walk-ins. Book online or flick us a call.</p>
-        </div>
-      </div>
+      <article class="crew-card reveal">
+        <div class="avatar">M</div>
+        <h3>Mason</h3>
+        <div class="role">Owner / Master Barber</div>
+        <p>Runs the chair day to day, from fades and scissor work to straight-razor shaves. As one review put it, he's "honed his craft to a fine art."</p>
+      </article>
+      <article class="crew-card reveal">
+        <div class="avatar">TS</div>
+        <h3>The Chair</h3>
+        <div class="role">Cuts &amp; Fades</div>
+        <p>Your go-to for a sharp modern fade or a clean classic cut, lined up tidy and finished clean every time.</p>
+      </article>
+      <article class="crew-card reveal">
+        <div class="avatar">Y</div>
+        <h3>Youth &amp; Family</h3>
+        <div class="role">Kids' Cuts</div>
+        <p>Patient with the young fellas, from first cuts and line-ups to fades for under 10s and under 15s.</p>
+      </article>
     </div>
-    <span class="badge-note">Second card shown as an example — get in touch to meet the full crew.</span>
   </div>
 </section>
 
 <!-- REVIEWS -->
-<section class="section bone-2" id="reviews">
+<section class="reviews sec-pad" id="reviews">
   <div class="wrap">
-    <div class="section-head reveal">
-      <p class="eyebrow">Word around town</p>
-      <h2>What locals say</h2>
-      <p>True School Barbers is 100% recommended by locals across 21+ reviews. A few of the kinds of things people say below — read them all and add yours on Google.</p>
+    <div class="rev-top reveal">
+      <div class="sec-head" style="margin-bottom:0">
+        <span class="eyebrow">Word of mouth</span>
+        <h2>What Southland's saying</h2>
+      </div>
+      <div class="rev-score">
+        <div class="num">5.0</div>
+        <div><div class="stars">★★★★★</div><div class="g">Google &amp; Facebook · 22+ reviews</div></div>
+      </div>
     </div>
     <div class="rev-grid">
       <article class="rev-card reveal">
         <div class="stars">★★★★★</div>
-        <p>“Best fade I've had in Invercargill, hands down. Mason takes his time and the finish is spot on. Won't go anywhere else now.”</p>
-        <div class="who"><span class="ini">JT</span><div><b>Jared T.</b><small>Avenal · Google</small></div></div>
+        <p class="text">"Great haircuts, and somehow even greater barbers."</p>
+        <div class="who"><span class="in">B</span><div><b>Benjamin</b><span>Google review</span></div></div>
       </article>
       <article class="rev-card reveal">
         <div class="stars">★★★★★</div>
-        <p>“Took my boy in for his first proper cut and they were so good with him. Great chat, sharp lines, fair price. Highly recommend.”</p>
-        <div class="who"><span class="ini">SM</span><div><b>Steph M.</b><small>Windsor · Google</small></div></div>
+        <p class="text">"Best in the South West. Mason has honed his craft to a fine art. Wouldn't go anywhere else for a cut."</p>
+        <div class="who"><span class="in">D</span><div><b>Deow Owen</b><span>Local Guide · Google review</span></div></div>
       </article>
       <article class="rev-card reveal">
         <div class="stars">★★★★★</div>
-        <p>“Had the hot towel shave and a cut — felt like a million bucks walking out. Proper old-school barbershop, exactly what Invercargill needed.”</p>
-        <div class="who"><span class="ini">DR</span><div><b>Dylan R.</b><small>Waikiwi · Google</small></div></div>
-      </article>
-      <article class="rev-card reveal">
-        <div class="stars">★★★★★</div>
-        <p>“Easy to book online, never kept waiting long and the cut always lasts. The beard line-up is next level. Good honest barber.”</p>
-        <div class="who"><span class="ini">CB</span><div><b>Cam B.</b><small>Georgetown · Google</small></div></div>
+        <p class="text">"Sharp cut every time and a good yarn while you're in the chair. Proper barber shop feel."</p>
+        <div class="who"><span class="in">J</span><div><b>Jono van't Wout</b><span>Google review</span></div></div>
       </article>
     </div>
-    <div class="rev-actions">
-      <a class="btn btn-line" href="https://www.google.com/maps/search/True+School+Barbers+Invercargill" target="_blank" rel="noopener">See all our Google reviews</a>
-      <a class="btn btn-line" href="https://www.facebook.com/p/True-School-Barbers-61563600298097/reviews/" target="_blank" rel="noopener">Reviews on Facebook</a>
-      <span class="badge-note">Example reviews shown — see the live ones on Google &amp; Facebook.</span>
+    <p class="rev-note">★ 5.0 from real reviews on True School Barbers' Google and Facebook pages.</p>
+    <div style="text-align:center;margin-top:22px">
+      <a class="btn btn-outline" href="https://www.google.com/maps/search/True+School+Barbers+Invercargill" target="_blank" rel="noopener">See all our Google reviews</a>
     </div>
   </div>
 </section>
 
 <!-- REVIEW BANNER -->
-<section class="review-banner">
-  <div class="wrap">
-    <p class="eyebrow" style="color:var(--gold-2)">Happy with your cut?</p>
-    <h2>Leave True School a review</h2>
-    <p>It takes ten seconds and it genuinely helps a local shop. Tap below to leave us a review straight on Google.</p>
-    <a class="btn btn-gold" href="https://www.google.com/maps/search/True+School+Barbers+Invercargill" target="_blank" rel="noopener">Leave a Google review</a>
+<section class="rev-banner">
+  <div class="wrap in">
+    <span class="eyebrow" style="color:var(--brass-soft)">Happy with your cut?</span>
+    <h2>Leave us a review</h2>
+    <p>A quick word on Google helps other Southland gents find a good chair. Cheers for taking a minute.</p>
+    <a class="btn btn-brass" href="https://www.google.com/maps/search/True+School+Barbers+Invercargill" target="_blank" rel="noopener">Leave a review on Google</a>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section class="section dark" id="contact">
+<section class="contact sec-pad" id="contact">
   <div class="wrap">
-    <div class="section-head reveal">
-      <p class="eyebrow">Come see us</p>
-      <h2>Find the shop</h2>
-      <p class="muted">Walk in, call ahead, or book your chair online — whatever's easiest.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-info reveal">
-        <div class="row">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
-          <div><b>Where</b><span>52 Victoria Avenue, Avenal, Invercargill 9810</span></div>
-        </div>
-        <div class="row">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.94.35 1.86.66 2.75a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.33-1.33a2 2 0 0 1 2.11-.45c.89.31 1.81.53 2.75.66A2 2 0 0 1 22 16.92z"/></svg></span>
-          <div><b>Call</b><a href="tel:+64211530128">021 153 0128</a></div>
-        </div>
-        <div class="row">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg></span>
-          <div><b>Email</b><a href="#" data-gmail data-user="trueschoolbarbers" data-domain="gmail.com" data-su="Booking%20enquiry" data-body="Hi%20Mason%2C%0A%0AI%27d%20like%20to%20book%20in%20for%20a%20cut.%0A%0AName%3A%0APreferred%20day%2Ftime%3A%0AService%3A%0A%0AThanks%21">trueschoolbarbers@gmail.com</a></div>
-        </div>
-        <div class="row">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
-          <div><b>Hours</b>
-            <ul class="hours-list">
-              <li><span>Tue</span><span>10:00 – 17:00</span></li>
-              <li><span>Wed</span><span>10:00 – 17:00</span></li>
-              <li><span>Thu</span><span>10:00 – 19:00</span></li>
-              <li><span>Fri</span><span>10:00 – 17:00</span></li>
-              <li><span>Sat</span><span>09:30 – 14:00</span></li>
-              <li><span>Sun / Mon</span><span>Closed</span></li>
-            </ul>
+    <div class="split">
+      <div class="reveal">
+        <span class="eyebrow">Get in the chair</span>
+        <h2>Book your cut</h2>
+        <p class="sub">Book online for live availability, or walk in when spots are free. We're on Victoria Avenue in Avenal, Invercargill.</p>
+        <div class="cinfo">
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            52 Victoria Avenue, Avenal, Invercargill 9810
           </div>
+          <a href="#" data-gmail data-user="trueschoolbarbers" data-domain="gmail.com" data-su="Booking%20enquiry%20-%20True%20School%20Barbers" data-body="Kia%20ora%20True%20School%20Barbers%2C%0A%0AI%27d%20like%20to%20book%20in%20for%3A%0A-%20Service%3A%20%0A-%20Preferred%20day%2Ftime%3A%20%0A%0AName%3A%20%0APhone%3A%20%0A%0ACheers">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+            trueschoolbarbers@gmail.com
+          </a>
         </div>
-        <div style="margin-top:20px">
-          <b style="font-family:'Oswald';text-transform:uppercase;letter-spacing:.06em;color:#fff;font-size:14px;display:block;margin-bottom:10px">Follow the shop</b>
-          <div class="socials">
-            <a href="https://www.facebook.com/p/True-School-Barbers-61563600298097/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a>
-            <a href="https://www.instagram.com/explore/search/keyword/?q=True%20School%20Barbers%20Invercargill" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
-            <a href="https://bookings.gettimely.com/trueschoolbarbers/bb/book" target="_blank" rel="noopener" aria-label="Book online"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></a>
-          </div>
+        <div class="socials">
+          <a href="https://www.facebook.com/p/True-School-Barbers-61563600298097/" target="_blank" rel="noopener" aria-label="True School Barbers on Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/trueschoolbarbers/" target="_blank" rel="noopener" aria-label="True School Barbers on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+          </a>
         </div>
       </div>
-
       <div class="contact-card reveal">
-        <h3>Book your chair</h3>
-        <p>Grab the next available slot online, or reach out directly — we'll sort you a time that works.</p>
-        <a class="btn btn-gold" href="https://bookings.gettimely.com/trueschoolbarbers/bb/book" target="_blank" rel="noopener">Book online</a>
-        <a class="btn btn-ghost" href="tel:+64211530128">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.94.35 1.86.66 2.75a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.33-1.33a2 2 0 0 1 2.11-.45c.89.31 1.81.53 2.75.66A2 2 0 0 1 22 16.92z"/></svg>
-          Call the shop
+        <h3>Sort your next cut</h3>
+        <p>Book online through Timely for live availability, or drop us an email.</p>
+        <a class="btn btn-brass" href="https://bookings.gettimely.com/trueschoolbarbers/book" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          Book online
         </a>
-        <a class="btn btn-ghost" href="#" data-gmail data-user="trueschoolbarbers" data-domain="gmail.com" data-su="Booking%20enquiry" data-body="Hi%20Mason%2C%0A%0AI%27d%20like%20to%20book%20in%20for%20a%20cut.%0A%0AName%3A%0APreferred%20day%2Ftime%3A%0AService%3A%0A%0AThanks%21">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg>
+        <a class="btn btn-ghost" href="https://www.facebook.com/p/True-School-Barbers-61563600298097/" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          Message on Facebook
+        </a>
+        <a class="btn btn-ghost" href="#" data-gmail data-user="trueschoolbarbers" data-domain="gmail.com" data-su="Booking%20enquiry%20-%20True%20School%20Barbers" data-body="Kia%20ora%20True%20School%20Barbers%2C%0A%0AI%27d%20like%20to%20book%20in%20for%3A%0A-%20Service%3A%20%0A-%20Preferred%20day%2Ftime%3A%20%0A%0AName%3A%20%0APhone%3A%20%0A%0ACheers">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
           Email us
         </a>
+        <div class="hours">
+          <div class="row"><span>Booking</span><b>Online, 24/7</b></div>
+          <div class="row"><span>Walk-ins</span><b>When spots are free</b></div>
+          <p style="margin-top:10px;font-size:.78rem;color:#8f897b">Live opening times show on our booking page.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- MAP -->
-<section class="dark" style="padding-bottom:70px">
-  <div class="map-wrap">
-    <div class="map-inner reveal">
-      <iframe title="True School Barbers location on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=52+Victoria+Avenue,+Avenal,+Invercargill+9810&output=embed"></iframe>
+<section class="map-sec">
+  <div class="wrap">
+    <div class="map-wrap reveal">
+      <iframe title="Map to True School Barbers, 52 Victoria Avenue, Avenal, Invercargill" src="https://www.google.com/maps?q=True+School+Barbers+52+Victoria+Avenue+Avenal+Invercargill&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
     </div>
   </div>
 </section>
+
+</main>
 
 <!-- FOOTER -->
 <footer>
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <a href="#top" class="brand"><span class="mark">TS</span><span><b>True School Barbers</b><em>Invercargill</em></span></a>
-        <p>A proper old-school barbershop in Avenal, Invercargill. Fades, classic cuts, beard work and hot-towel shaves — walk in or book online.</p>
-        <div class="socials" style="margin-top:16px">
-          <a href="https://www.facebook.com/p/True-School-Barbers-61563600298097/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a>
-          <a href="https://www.instagram.com/explore/search/keyword/?q=True%20School%20Barbers%20Invercargill" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
-        </div>
+        <a href="#top" class="logo">
+          <img src="img/logo.png" alt="True School Barbers" class="logo-img">
+        </a>
+        <p>A Southland barber shop on Victoria Avenue, Avenal — fades, classic cuts, beard work and straight-razor shaves.</p>
       </div>
-      <div>
-        <h4>Explore</h4>
+      <div class="foot-col">
+        <h4>Shop</h4>
         <a href="#services">Services</a>
-        <a href="#about">About the shop</a>
-        <a href="#crew">The crew</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
         <a href="#reviews">Reviews</a>
-        <a href="#contact">Contact &amp; hours</a>
+        <a href="#contact">Contact</a>
       </div>
-      <div>
-        <h4>Visit</h4>
-        <a href="https://www.google.com/maps/search/True+School+Barbers+Invercargill" target="_blank" rel="noopener">52 Victoria Avenue, Avenal</a>
-        <a href="tel:+64211530128">021 153 0128</a>
-        <a href="#" data-gmail data-user="trueschoolbarbers" data-domain="gmail.com" data-su="Booking%20enquiry" data-body="Hi%20Mason%2C%0A%0AI%27d%20like%20to%20book%20in%20for%20a%20cut.%0A%0AThanks%21">trueschoolbarbers@gmail.com</a>
-        <a href="https://bookings.gettimely.com/trueschoolbarbers/bb/book" target="_blank" rel="noopener">Book online</a>
+      <div class="foot-col">
+        <h4>Get in touch</h4>
+        <a href="https://bookings.gettimely.com/trueschoolbarbers/book" target="_blank" rel="noopener">Book online</a>
+        <a href="https://www.google.com/maps/search/True+School+Barbers+Invercargill" target="_blank" rel="noopener">Find us on Google</a>
         <a href="https://www.google.com/maps/search/True+School+Barbers+Invercargill" target="_blank" rel="noopener">Leave a review</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© <span id="yr"></span> True School Barbers, Invercargill. All rights reserved.</span>
-      <span><a href="terms.html">Terms &amp; Conditions</a> · <a href="privacy.html">Privacy Policy</a></span>
+      <span>© <span id="yr"></span> True School Barbers · 52 Victoria Avenue, Avenal, Invercargill</span>
+      <div class="socials">
+        <a href="https://www.facebook.com/p/True-School-Barbers-61563600298097/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="https://www.instagram.com/trueschoolbarbers/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+      </div>
     </div>
   </div>
 </footer>
 
 <script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+// Intro
+window.addEventListener('load',function(){setTimeout(function(){var i=document.getElementById('intro');if(i){i.classList.add('done');}},1700);});
+
+// Nav scroll
+var nav=document.getElementById('nav');
+window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>40);});
+
+// Burger
+var burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.addEventListener('click',function(){var o=menu.classList.toggle('open');burger.classList.toggle('open',o);burger.setAttribute('aria-expanded',o);});
+menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('open');burger.classList.remove('open');burger.setAttribute('aria-expanded',false);});});
+
+// Hero rotation
 (function(){
-  window.addEventListener('load',function(){
-    setTimeout(function(){var i=document.getElementById('intro');if(i)i.classList.add('hide');},900);
-  });
-  setTimeout(function(){var i=document.getElementById('intro');if(i)i.classList.add('hide');},2600);
+  var reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var slides=[].slice.call(document.querySelectorAll('#slides .slide'));
+  slides.forEach(function(s){var bg=s.getAttribute('data-bg');if(bg){var im=new Image();im.src=bg;im.onload=function(){s.style.backgroundImage='url('+bg+')';};}});
+  if(reduce||slides.length<2)return;
+  var i=0;
+  setInterval(function(){slides[i].classList.remove('active');i=(i+1)%slides.length;slides[i].classList.add('active');},6000);
+})();
 
-  var yr=document.getElementById('yr'); if(yr) yr.textContent=(new Date()).getFullYear();
+// Gmail compose buttons
+document.querySelectorAll('a[data-gmail]').forEach(function(a){
+  var u=a.getAttribute('data-user'),d=a.getAttribute('data-domain');
+  var base='https://mail.google.com/mail/?view=cm&fs=1';
+  if(u&&d){base+='&to='+encodeURIComponent(u+'@'+d);}
+  base+='&su='+(a.getAttribute('data-su')||'')+'&body='+(a.getAttribute('data-body')||'');
+  a.href=base;a.target='_blank';a.rel='noopener';
+});
 
-  var b=document.getElementById('burger'), m=document.getElementById('mobileMenu');
-  if(b&&m){b.addEventListener('click',function(){m.classList.toggle('open');});
-    m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open');});});}
-
-  document.querySelectorAll('a[data-gmail]').forEach(function(a){
-    var to=a.getAttribute('data-user')+'@'+a.getAttribute('data-domain');
-    a.href='https://mail.google.com/mail/?view=cm&fs=1&to='+encodeURIComponent(to)+'&su='+(a.getAttribute('data-su')||'')+'&body='+(a.getAttribute('data-body')||'');
-    a.target='_blank'; a.rel='noopener';
-  });
-
-  var slides=document.querySelectorAll('#heroBg .slide');
-  if(slides.length>1 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
-    var idx=0;
-    setInterval(function(){
-      slides[idx].classList.remove('on');
-      idx=(idx+1)%slides.length;
-      slides[idx].classList.add('on');
-    },6000);
-  }
-
-  var io=new IntersectionObserver(function(entries){
-    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
-  },{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+// Reveal on scroll
+(function(){
+  var els=[].slice.call(document.querySelectorAll('.reveal'));
+  if(!('IntersectionObserver'in window)){els.forEach(function(e){e.classList.add('in');});return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+  els.forEach(function(e){io.observe(e);});
 })();
 </script>
 </body>
